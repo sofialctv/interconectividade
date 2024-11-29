@@ -1,5 +1,4 @@
 # TRABALHO PRÁTICO - Interconectividade 4.0
-ENGENHARIA DE CONTROLE E AUTOMAÇÃO
 
 ### OBSERVAÇÕES IMPORTANTES
 - O trabalho será individual.
@@ -8,16 +7,10 @@ ENGENHARIA DE CONTROLE E AUTOMAÇÃO
 - Cada item será considerado realizado com a sua respectiva demonstração no vídeo gravado.
 - Utilize o Discord para tirar suas dúvidas.
 - Plágios serão anulados.
----
-
+  
 ## CONTEXTO
 
-Você foi contratado para implantar uma rede de supervisão de controle para acionamento de chaves comutadoras de energia elétrica. Na fase de projeto, você deverá apresentar um relatório com a divisão lógica do projeto, organizada de forma simplificada em etapas.
-Existe uma central de controle em ES. A rede industrial deverá ser implementada em uma IDMZ (Industrial DMZ). Existem 3 plantas locais, que estão em um raio de 5 km². Essas plantas já operam com redes fielbus, mas será necessário ajustar e montar uma integração vertical do chão de fábrica até a rede corporativa. 
-A rede de supervisão e gestão de fábrica deverá ficar em uma DMZ de sistemas interna à IDMZ, e apenas o tráfego autorizado entre esta DMZ de sistemas e a rede corporativa deve ser permitido. Além disso, nessa DMZ ficará o acesso remoto da equipe, e uma rede para este fim deve ser aprovisionada com o devido acesso às redes de controle.
-Nas redes de controle, cada planta deve estar isolada das demais, provendo conectividade ao respectivo CLP de operação e ao supervisório de forma segura e controlada. Remotamente, a este ambiente, existem outras duas plantas conectadas diretamente à sede que fazem operação remota de chaves de comutação. É necessário prover a conexão segura entre os CLPs remotos e os sistemas locais da sede.
-Todos os switches devem ser interconectados de forma a prover pelo menos redundância a 1 falha de link na rede em L2, utilizando convergência rápida. Na DMZ, um switch Ethernet central integra as conexões e conecta os servidores que hospedam os serviços de apoio à produção e supervisão em 2 redes. Cada uma dessas redes precisa suportar pelo menos 40 serviços com endereços diferentes. Não há a necessidade de NAT, pois a rede é totalmente privativa. A redundância da rede deve operar com baixíssimo tempo de recuperação, em L2 (ver Rapid STP).
----
+Você foi contratado para implantar uma rede de supervisão de controle para acionamento de chaves comutadoras de energia elétrica. Na fase de projeto, você deverá apresentar um relatório com a divisão lógica do projeto, organizada de forma simplificada em etapas. Existe uma central de controle em ES. A rede industrial deverá ser implementada em uma IDMZ (Industrial DMZ). Existem 3 plantas locais, que estão em um raio de 5 km². Essas plantas já operam com redes fielbus, mas será necessário ajustar e montar uma integração vertical do chão de fábrica até a rede corporativa. A rede de supervisão e gestão de fábrica deverá ficar em uma DMZ de sistemas interna à IDMZ, e apenas o tráfego autorizado entre esta DMZ de sistemas e a rede corporativa deve ser permitido. Além disso, nessa DMZ ficará o acesso remoto da equipe, e uma rede para este fim deve ser aprovisionada com o devido acesso às redes de controle. Nas redes de controle, cada planta deve estar isolada das demais, provendo conectividade ao respectivo CLP de operação e ao supervisório de forma segura e controlada. Remotamente, a este ambiente, existem outras duas plantas conectadas diretamente à sede que fazem operação remota de chaves de comutação. É necessário prover a conexão segura entre os CLPs remotos e os sistemas locais da sede. Todos os switches devem ser interconectados de forma a prover pelo menos redundância a 1 falha de link na rede em L2, utilizando convergência rápida. Na DMZ, um switch Ethernet central integra as conexões e conecta os servidores que hospedam os serviços de apoio à produção e supervisão em 2 redes. Cada uma dessas redes precisa suportar pelo menos 40 serviços com endereços diferentes. Não há a necessidade de NAT, pois a rede é totalmente privativa. A redundância da rede deve operar com baixíssimo tempo de recuperação, em L2 (ver Rapid STP).
 
 # DEMANDAS IMPLEMENTADAS NO PACKET TRACER
 ### 1. Montagem da infraestrutura (10%)
